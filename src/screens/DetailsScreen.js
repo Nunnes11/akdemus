@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Text, View, StyleSheet } from "react-native";
-import * as FileSystem from "expo-file-system";
+import { Asset } from "expo-asset";
 
 export default function DetailsScreen() {
   const [content, setContent] = useState("");
@@ -8,18 +8,14 @@ export default function DetailsScreen() {
   useEffect(() => {
     const loadFile = async () => {
       try {
-        // Caminho correto para acessar o arquivo
-        const fileUri = FileSystem.documentDirectory + "assets/data/ataraxia.txt";
+        // Carrega o arquivo como Asset
+        const asset = Asset.fromModule(require("../../assets/data/ataraxia.txt"));
+        await asset.downloadAsync(); // Garante que o arquivo foi baixado
 
-        // Verifica se o arquivo existe
-        const fileInfo = await FileSystem.getInfoAsync(fileUri);
-        if (!fileInfo.exists) {
-          throw new Error("Arquivo não encontrado.");
-        }
-
-        // Lê o conteúdo do arquivo
-        const fileContent = await FileSystem.readAsStringAsync(fileUri);
-        setContent(fileContent);
+        // Lê o conteúdo do arquivo como texto
+        const response = await fetch(asset.localUri || asset.uri);
+        const text = await response.text();
+        setContent(text);
       } catch (error) {
         console.error("Erro ao carregar o arquivo:", error);
         setContent("Erro ao carregar o arquivo.");
@@ -50,12 +46,5 @@ const styles = StyleSheet.create({
   },
   content: {
     fontSize: 16,
-    lineHeight: 24,
   },
 });
-
-
-
-
-
-

@@ -4,13 +4,13 @@ import { useNavigation } from "@react-navigation/native";
 import CurrentDate from "../components/CurrentDate";
 import SearchBar from "../components/SearchBar";
 import TermsBox from "../components/TermsBox";
+import termsData from "../../assets/data/terms.json"; // Importa o JSON
 
 export default function HomeScreen() {
   const navigation = useNavigation();
 
-  const terms = ["Ataraxia"]; // Lista inicial de termos
-
   const handleTermPress = (term) => {
+    // Navega para a tela de detalhes, passando os dados do termo
     navigation.navigate("DetailsScreen", { term });
   };
 
@@ -27,7 +27,7 @@ export default function HomeScreen() {
       <CurrentDate />
       {/* Seção de termos pesquisados */}
       <Text style={styles.subtitle}>Termos pesquisados</Text>
-      <TermsBox terms={terms} onTermPress={handleTermPress} />
+      <TermsBox terms={termsData} onTermPress={handleTermPress} />
     </View>
   );
 }
@@ -53,5 +53,6 @@ const styles = StyleSheet.create({
     color: "#fff",
   },
 });
+
 
 

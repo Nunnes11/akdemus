@@ -1,34 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Text, View, StyleSheet } from "react-native";
-import { Asset } from "expo-asset";
+import { useRoute } from "@react-navigation/native";
 
 export default function DetailsScreen() {
-  const [content, setContent] = useState("");
-
-  useEffect(() => {
-    const loadFile = async () => {
-      try {
-        // Carrega o arquivo como Asset
-        const asset = Asset.fromModule(require("../../assets/data/ataraxia.txt"));
-        await asset.downloadAsync(); // Garante que o arquivo foi baixado
-
-        // Lê o conteúdo do arquivo como texto
-        const response = await fetch(asset.localUri || asset.uri);
-        const text = await response.text();
-        setContent(text);
-      } catch (error) {
-        console.error("Erro ao carregar o arquivo:", error);
-        setContent("Erro ao carregar o arquivo.");
-      }
-    };
-
-    loadFile();
-  }, []);
+  const route = useRoute();
+  const { term } = route.params; // Obtém o termo recebido via navegação
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Ataraxia</Text>
-      <Text style={styles.content}>{content}</Text>
+      <Text style={styles.title}>{term.term}</Text>
+      {term.definition.map((paragraph, index) => (
+        <Text key={index} style={styles.content}>
+          {paragraph}
+        </Text>
+      ))}
     </View>
   );
 }

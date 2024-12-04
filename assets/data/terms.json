@@ -2,6 +2,27 @@
     {
         "id": 1,
         "term": "Ataraxia",
-        "definition": "assets/data/ataraxia.txt"
+        "definition": [
+            "Termo usado primeiramente por Demócrito (Fr. 191), depois pelos epicuristas e pelos estóicos para designar o ideal",
+            "da imperturbabilidade ou da serenidade da alma, em decorrência do domínio sobre as paixões ou da extirpação destas",
+            "(v.APATIA). Analogamente, 'o objetivo do ceticismo é a A. nas coisas opináveis e a moderação nas coisas que são por",
+            "necessidade (SEXTO EMPÍRICO Pirr. hyp., I, 25).",
+            "FONTE: Dicionário de Filosofia",
+            "Autor: Nicola Abbagnano",
+            "Ano: 2007"
+        ]
+    },
+
+    {
+        "id": 2,
+        "term": "Aporia",
+        "definition": [
+            "Esse termo é usado no sentido de dúvida racional, isto é, de dificuldade inerente a um raciocínio, e não no de",
+            "estado subjetivo de incerteza. É, portanto, a dúvida objetiva, a dificuldade efetiva de um raciocínio ou da conclusão",
+            "a que leva um raciocínio. P. ex., 'As A. de Zenão de Eléia sobre o movimento", "As A. do infinito etc.",
+            "FONTE: Dicionário de Filosofia",
+            "Autor: Nicola Abbagnano",
+            "Ano: 2007"
+        ]
     }
 ]

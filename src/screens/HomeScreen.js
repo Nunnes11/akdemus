@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import CurrentDate from "../components/CurrentDate";
 import SearchBar from "../components/SearchBar";
@@ -28,6 +28,15 @@ export default function HomeScreen() {
       {/* Seção de termos pesquisados */}
       <Text style={styles.subtitle}>Termos pesquisados</Text>
       <TermsBox terms={termsData} onTermPress={handleTermPress} />
+
+      <Text style={styles.title}>Não encontrou o que buscava?</Text>
+
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate('SolicitationScreen')}
+      >
+        <Text style={styles.buttonText}>Solicite um termo</Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -52,6 +61,26 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     color: "#fff",
   },
+
+  title: {
+    fontSize:17,
+    fontWeight:'bold',
+    color:'#fff',
+    marginTop:30
+  },
+
+  button: {
+    backgroundColor:'#ADD8E6',
+    marginRight:120,
+    marginTop:10,
+    borderRadius:5
+  },
+
+  buttonText: {
+    color:'#4169E1',
+    padding:5,
+    textAlign:'center'
+  }
 });
 
 

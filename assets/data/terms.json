@@ -2,27 +2,54 @@
     {
         "id": 1,
         "term": "Ataraxia",
+        "subtitle": "Filosofia",
         "definition": [
             "Termo usado primeiramente por Demócrito (Fr. 191), depois pelos epicuristas e pelos estóicos para designar o ideal",
             "da imperturbabilidade ou da serenidade da alma, em decorrência do domínio sobre as paixões ou da extirpação destas",
             "(v.APATIA). Analogamente, 'o objetivo do ceticismo é a A. nas coisas opináveis e a moderação nas coisas que são por",
-            "necessidade (SEXTO EMPÍRICO Pirr. hyp., I, 25).",
-            "FONTE: Dicionário de Filosofia",
-            "Autor: Nicola Abbagnano",
-            "Ano: 2007"
-        ]
+            "necessidade (SEXTO EMPÍRICO Pirr. hyp., I, 25)."
+        ],
+        "source": "Dicionário de Filosofia\nAutor: Nicola Abbagnano\nAno: 2007"
     },
 
     {
         "id": 2,
         "term": "Aporia",
+        "subtitle": "Filosofia",
         "definition": [
             "Esse termo é usado no sentido de dúvida racional, isto é, de dificuldade inerente a um raciocínio, e não no de",
             "estado subjetivo de incerteza. É, portanto, a dúvida objetiva, a dificuldade efetiva de um raciocínio ou da conclusão",
-            "a que leva um raciocínio. P. ex., 'As A. de Zenão de Eléia sobre o movimento", "As A. do infinito etc.",
-            "FONTE: Dicionário de Filosofia",
-            "Autor: Nicola Abbagnano",
-            "Ano: 2007"
-        ]
+            "a que leva um raciocínio. P. ex., 'As A. de Zenão de Eléia sobre o movimento", "As A. do infinito etc."
+        ],
+        "source": "Dicionário de Filosofia\nAutor: Nicola Abbagnano\nAno: 2007"
+    },
+
+    {
+        "id": 3,
+        "term": "Violência",
+        "subtitle": "Política",
+        "definition":[
+            "Por Violência entende-se a intervenção física de um indivíduo ou grupo contra outro indivíduo ou",
+            "grupo (ou também contra si mesmo). Para que haja Violência é preciso que a intervenção física seja",
+            "voluntária: o motorista implicado num acidente de trânsito não exerce a Violência contra as pessoas",
+            "que ficaram feridas, enquanto exerce Violência quem atropela intencionalmente uma pessoa odiada.",
+            "Além disso, a intervenção física, na qual a Violência consiste, tem por finalidade destruir, ofender",
+            "e coagir. É Violência a intervenção do torturador que mutila sua vítima; não é Violência a operação do",
+            "cirurgião que busca salvar a vida de seu paciente."
+        ],
+        "source": "Dicionário de Política\nAutores: Noberto Bobbio\nNicola Matteucci\nGianfranco Pasquino"
+    },
+
+    {
+        "id": 4,
+        "term": "Agregação",
+        "subtitle": "Sociologia",
+        "definition":[
+            "GIDDINGS usa o termo agregação para denominar uma população ou um grupo territorial crescido por",
+            "excesso do nascimento sobre os óbitos. É preciso distinguir agregação genética e congregação, crescimento",
+            "esse originado pelo excesso dos imigrantes sobre os emigrantes (Ginddings 1, 255).",
+            "Toda população é, é regra, agregação e congregação."
+        ],
+        "source":"Dicionário de Etnologia e Sociologia\nAutores: Herbert Baudus e Emilio Willens"
     }
 ]

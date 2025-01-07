@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   },
 
   termButton: {
-    backgroundColor: "#4169E1",
+    backgroundColor: "#87CEEB",
     padding: 10,
     margin: 5,
     borderRadius: 5,
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     textAlign: "center",
     fontWeight: "bold",
-    color: "#fff",
+    color: "#4682B4",
   },
 });
 

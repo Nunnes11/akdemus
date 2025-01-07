@@ -15,7 +15,7 @@ export default function CurrentDate() {
 const styles = StyleSheet.create({
   dateText: {
     fontSize: 14,
-    color: '#fff',
+    color: '#4169E1',
     marginBottom: 10,
   },
 });

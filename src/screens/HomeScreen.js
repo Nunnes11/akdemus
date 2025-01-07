@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: "#5e8dd3",
+    backgroundColor: "#B0E0E6",
   },
   logo: {
     width: 222,
@@ -68,25 +68,25 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginTop: 10,
     marginBottom: 10,
-    color: "#fff",
+    color: "#4682B4",
   },
 
   title: {
     fontSize:17,
     fontWeight:'bold',
-    color:'#fff',
+    color:'#4682B4',
     marginTop:30
   },
 
   button: {
-    backgroundColor:'#ADD8E6',
+    backgroundColor:'#87CEEB',
     marginRight:120,
     marginTop:10,
     borderRadius:5
   },
 
   buttonText: {
-    color:'#4169E1',
+    color:'#4682B4',
     padding:5,
     textAlign:'center'
   }

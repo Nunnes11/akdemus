@@ -42,4 +42,10 @@ export const saveSolicitation = async (newSolicitation) => {
   await writeData(SOLICITATIONS_PATH, solicitations);
 };
 
+export const saveDefinition = async (newDefinition) => {
+  const definitions = await readData(DEFINITIONS_PATH);
+  definitions.push(newDefinition);
+  await writeData(DEFINITIONS_PATH, definitions);
+};
+
 

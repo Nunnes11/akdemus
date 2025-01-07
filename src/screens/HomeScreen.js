@@ -26,7 +26,7 @@ export default function HomeScreen() {
       {/* Data posicionada abaixo do campo de busca */}
       <CurrentDate />
       {/* Seção de termos pesquisados */}
-      <Text style={styles.subtitle}>Termos pesquisados</Text>
+      <Text style={styles.subtitle}>Últimas pesquisas</Text>
       <TermsBox terms={termsData} onTermPress={handleTermPress} />
 
       <Text style={styles.title}>Não encontrou o que buscava?</Text>
@@ -36,6 +36,15 @@ export default function HomeScreen() {
         onPress={() => navigation.navigate('SolicitationScreen')}
       >
         <Text style={styles.buttonText}>Solicite um termo</Text>
+      </TouchableOpacity>
+
+      <Text style={styles.title}>Deseja contribuir conosco?</Text>
+
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate("DefinitionScreen")}
+      >
+        <Text style={styles.buttonText}>Clique aqui</Text>
       </TouchableOpacity>
     </View>
   );

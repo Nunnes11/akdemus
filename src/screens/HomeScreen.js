@@ -42,9 +42,9 @@ export default function HomeScreen() {
 
       <TouchableOpacity
         style={styles.button}
-        onPress={() => navigation.navigate("DefinitionScreen")}
+        onPress={() => navigation.navigate("ContributorsScreen")}
       >
-        <Text style={styles.buttonText}>Clique aqui</Text>
+        <Text style={styles.buttonText}>Cadastre seu e-mail</Text>
       </TouchableOpacity>
     </View>
   );

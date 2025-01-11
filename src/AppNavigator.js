@@ -8,6 +8,7 @@ import HomeScreen from './screens/HomeScreen';
 import DetailsScreen from './screens/DetailsScreen';
 import SolicitationScreen from './screens/SolicitationScreen';
 import DefinitionScreen from './screens/DefinitionScreen';
+import ContributorsScreen from './screens/ContributorsScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -20,6 +21,7 @@ export default function AppNavigator() {
         <Stack.Screen name="DetailsScreen" component={DetailsScreen} />
         <Stack.Screen name="SolicitationScreen" component={SolicitationScreen} />
         <Stack.Screen name="DefinitionScreen" component={DefinitionScreen} />
+        <Stack.Screen name="ContributorsScreen" component={ContributorsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
